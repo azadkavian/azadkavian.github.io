@@ -1,0 +1,38 @@
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: #777;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Lato;
+}
+
+.cv__page {
+  background-color: var(--color-bright);
+
+  width: 210mm;
+  height: 297mm;
+  box-sizing: border-box;
+  padding: 0.25in;
+
+  display: grid;
+  grid-template-columns: var(--sidebar-size) 1fr;
+  grid-template-rows: var(--sidebar-size) auto;
+  grid-template-areas:
+    'profilePicture profileContent'
+    'skills xp'
+    'skills education'
+    'skills .';
+  gap: 0.15in;
+}
+
+.cv__icon {
+  width: 16px;
+  height: 16px;
+  margin-inline-end: 4px;
+}
