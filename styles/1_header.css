@@ -3,6 +3,8 @@
 
   width: var(--sidebar-size);
   height: var(--sidebar-size);
+  z-index: 1;
+  border-radius: 50%;
 }
 
 .header__content {

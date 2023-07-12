@@ -24,7 +24,7 @@
 }
 
 .xp li:not(:last-child) {
-  border-bottom: 1px solid var(--color-light);
+  border-bottom: 1px dotted var(--color-light);
 }
 
 .xp__logo {

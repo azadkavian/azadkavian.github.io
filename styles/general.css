@@ -13,7 +13,9 @@ body {
 }
 
 .cv__page {
+  position: relative;
   background-color: var(--color-bright);
+  overflow: hidden;
 
   width: 210mm;
   height: 297mm;
