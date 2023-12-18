@@ -27,10 +27,9 @@
 }
 
 .header__content p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 14px;
   color: var(--color-grey);
-  text-align: justify;
   margin-bottom: 8px;
 }
 

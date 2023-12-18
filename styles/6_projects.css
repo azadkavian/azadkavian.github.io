@@ -1,0 +1,36 @@
+.projects {
+  position: relative;
+}
+
+.projects > h3 {
+  color: var(--color-dark);
+}
+
+.projects > li {
+  display: grid;
+  grid-template-columns: var(--xp-logo-size) 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'header header'
+    'skills tags';
+  gap: 5px;
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+
+.project__header {
+  grid-area: header;
+}
+
+.projects h4 {
+  font-weight: bold;
+  color: var(--color-dark);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.projects h4 em {
+  font-weight: light;
+  color: var(--color-light);
+  font-size: 12px;
+}
