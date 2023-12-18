@@ -12,25 +12,52 @@ body {
   font-family: Lato;
 }
 
-.cv__page {
+.cv__wrapper {
   position: relative;
-  background-color: var(--color-bright);
-  overflow: hidden;
 
   width: 210mm;
   height: 297mm;
   box-sizing: border-box;
-  padding: 0.25in;
+  overflow: hidden;
+  background-color: var(--color-bright);
+}
+
+.cv__border {
+  position: absolute;
+  width: 33%;
+  height: 100%;
+  background-color: var(--color-dark);
+  top: 0;
+  right: 0;
+}
+
+.cv__page {
+  position: relative;
+
+  width: calc(100% - 1in);
+  height: calc(100% - 1in);
+  box-sizing: border-box;
+  margin: 0.5in;
 
   display: grid;
   grid-template-columns: var(--sidebar-size) 1fr;
+  gap: 0.25in;
+}
+
+.cv__page aside {
+  display: grid;
   grid-template-rows: var(--sidebar-size) auto;
-  grid-template-areas:
-    'profilePicture profileContent'
-    'skills xp'
-    'skills education'
-    'skills .';
-  gap: 0.15in;
+  gap: 0.25in;
+}
+
+.cv__page main {
+  grid-template-rows: calc(var(--sidebar-size) - 0.25in) auto auto auto;
+  display: grid;
+  gap: 0.25in;
+  background-color: var(--color-bright);
+  padding: 0.25in;
+  border-radius: 10px;
+  box-shadow: 0 0 0.25in #0002;
 }
 
 .cv__icon {

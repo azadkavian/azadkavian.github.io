@@ -1,13 +1,8 @@
 .xp {
-  grid-area: xp;
-
   position: relative;
 }
 
 .xp > h3 {
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 10px;
   color: var(--color-dark);
 }
 
@@ -38,14 +33,14 @@
 .xp__header--title {
   font-weight: bold;
   color: var(--color-dark);
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 4px;
 }
 
 .xp__header--date {
   font-weight: light;
   color: var(--color-light);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .xp__header--position {
@@ -53,8 +48,8 @@
 }
 
 .xp__body {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 300;
   color: var(--color-grey);
 }

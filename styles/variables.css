@@ -1,5 +1,5 @@
 :root {
-  --sidebar-size: 230px;
+  --sidebar-size: 200px;
 
   --color-deep: #111;
   --color-darker: #222;
@@ -9,5 +9,5 @@
   --color-lighter: #eee;
   --color-bright: #fff;
 
-  --xp-logo-size: 90px;
+  --xp-logo-size: 50px;
 }
