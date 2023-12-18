@@ -13,9 +13,9 @@
   grid-template-areas:
     'header header'
     'skills tags';
-  gap: 5px;
+  gap: 2.5px 9px;
   box-sizing: border-box;
-  padding: 5px 0;
+  padding: 2.5px 0;
 }
 
 .project__header {

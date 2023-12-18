@@ -37,7 +37,7 @@
 }
 
 .cv__page main {
-  grid-template-rows: calc(var(--sidebar-size) - 0.25in) auto auto auto;
+  grid-template-rows: calc(var(--sidebar-size) - 0.25in) auto auto;
   display: grid;
   gap: 0.25in;
   background-color: var(--color-bright);
