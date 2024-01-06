@@ -1,13 +1,14 @@
 :root {
-  --sidebar-size: 190px;
+  --sidebar-size: 2.4in;
 
   --color-deep: #111;
   --color-darker: #222;
   --color-dark: #333;
-  --color-grey: #999;
+  --color-smoke: #777;
+  --color-grey: #aaa;
   --color-light: #ccc;
   --color-lighter: #eee;
   --color-bright: #fff;
 
-  --xp-logo-size: 50px;
+  --xp-logo-size: 0.5in;
 }

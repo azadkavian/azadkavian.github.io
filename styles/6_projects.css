@@ -15,7 +15,7 @@
     'skills tags';
   gap: 2.5px 9px;
   box-sizing: border-box;
-  padding: 2.5px 0;
+  padding-bottom: 20px;
 }
 
 .project__header {

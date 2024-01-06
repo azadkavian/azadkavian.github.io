@@ -34,12 +34,11 @@ body {
 
 .cv__tag {
   font-size: 10px;
-  color: var(--color-bright);
-  background-color: var(--color-light);
+  color: var(--color-grey);
+  border: 1px solid var(--color-grey);
+  background-color: transparent;
   line-height: 12px;
   padding: 2px 6px;
-  border-radius: 10px;
-  text-shadow: 0px 1px 3px #0007;
 }
 
 .cv__tag:not(:last-child) {

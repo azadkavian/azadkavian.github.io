@@ -1,15 +1,15 @@
 .skills h3 {
-  color: var(--color-dark);
+  color: var(--color-bright);
 }
 
 .skills__list {
   list-style: disc;
-  padding-inline-start: 20px;
+  padding-inline-start: 16px;
   margin-bottom: 20px;
 }
 
 .skills__list li {
   font-size: 12px;
-  line-height: 16px;
-  color: var(--color-grey);
+  line-height: 18px;
+  color: var(--color-light);
 }
