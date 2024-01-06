@@ -2,7 +2,6 @@
   width: calc(var(--sidebar-size) - 0.5in);
   height: calc(var(--sidebar-size) - 0.5in);
   z-index: 1;
-  border-radius: 0.125in;
 }
 
 .header__content {

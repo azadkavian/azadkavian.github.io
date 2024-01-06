@@ -16,6 +16,9 @@
     'skills tags';
   gap: 10px;
   box-sizing: border-box;
+}
+
+.xp > li:not(:last-child) {
   padding-bottom: 30px;
 }
 
@@ -24,7 +27,7 @@
 
   width: var(--xp-logo-size);
   height: var(--xp-logo-size);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .xp__header--title {
