@@ -20,16 +20,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 2px;
   align-items: center;
-  justify-items: center;
 }
 
 .interests__list li {
   font-size: 12px;
   line-height: 18px;
   color: var(--color-light);
-}
 
-.interests__list li img {
-  width: 16px;
-  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
