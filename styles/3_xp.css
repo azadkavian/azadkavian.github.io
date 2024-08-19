@@ -14,12 +14,12 @@
     'logo header'
     'logo body'
     'skills tags';
-  gap: 10px;
+  gap: 7.5px;
   box-sizing: border-box;
 }
 
 .xp > li:not(:last-child) {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .xp__logo {
