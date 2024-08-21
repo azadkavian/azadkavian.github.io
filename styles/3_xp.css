@@ -27,7 +27,7 @@
 
   width: var(--xp-logo-size);
   height: var(--xp-logo-size);
-  /* border-radius: 10px; */
+  object-fit: contain;
 }
 
 .xp__header--title {
