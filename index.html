@@ -1,362 +1,373 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azad Kavian's CV</title>
-
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/typography.css" />
-    <link rel="stylesheet" href="styles/general.css" />
-
-    <link rel="stylesheet" href="styles/1_header.css" />
-    <link rel="stylesheet" href="styles/2_skills.css" />
-    <link rel="stylesheet" href="styles/3_xp.css" />
-    <link rel="stylesheet" href="styles/4_education.css" />
-    <link rel="stylesheet" href="styles/5_page.css" />
-    <link rel="stylesheet" href="styles/6_projects.css" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    <script src="scripts/index.js"></script>
-  </head>
-  <body>
-    <div class="cv__mobile-overlay">
-      <h1>
-        To see the content of this page properly, please use a device with bigger screen size.
-      </h1>
-    </div>
-    <div class="cv__wrapper" id="cvWrapper">
-      <div class="cv__page">
-        <aside>
-          <img class="header__picture" src="assets/images/profile.png" alt="Azad Kavian" />
-          <section class="skills">
-            <h3>Programming Skills</h3>
-            <ul class="skills__list">
-              <li>Angular</li>
-              <li>TypeScript/JavaScript</li>
-              <li>NestJS/NodeJS</li>
-              <li>NgXS/NgRx</li>
-              <li>PrimeNG/Material</li>
-              <li>Bootstrap/Bulma/Tailwind</li>
-              <li>Python/Flask/SQLAlchemy</li>
-              <li>Ionic</li>
-            </ul>
-
-            <h3>Developer Skills</h3>
-            <ul class="skills__list">
-              <li>RESTful APIs</li>
-              <li>GraphQL</li>
-              <li>Git</li>
-              <li>Docker</li>
-              <li>CI/CD Pipelines</li>
-              <li>CleanCode/SOLID/DRY</li>
-              <li>DDD/BDD</li>
-            </ul>
-
-            <h3>Computer Skills</h3>
-            <ul class="skills__list">
-              <li>Design Tools (Figma)</li>
-              <li>Graphic Tools (Photoshop)</li>
-              <li>Office Tools (Word/GoogleSheets)</li>
-              <li>Audio Tools (GarageBand)</li>
-              <li>Video Tools (DaVinci Resolve)</li>
-              <li>AI Tools (Copilot)</li>
-            </ul>
-
-            <h3>Organizational Skills</h3>
-            <ul class="skills__list">
-              <li>Presentation</li>
-              <li>Management</li>
-              <li>Leadership</li>
-              <li>Teamwork</li>
-            </ul>
-
-            <h3>Language Skills</h3>
-            <ul class="skills__list">
-              <li>Persian (Native)</li>
-              <li>English (Advanced)</li>
-              <li>Swedish (Learning)</li>
-            </ul>
-
-            <h3>Interests</h3>
-            <ul class="interests__list">
-              <li>
-                <img class="cv__icon" src="assets/icons/icon-gaming.png" />
-                <!-- <a href="https://www.flaticon.com/free-icons/joystick" title="joystick icons">Joystick icons created by Good Ware - Flaticon</a> -->
-                <span>Gaming</span>
-              </li>
-              <li>
-                <img class="cv__icon" src="assets/icons/icon-dnd.png" />
-                <!-- <a href="https://www.flaticon.com/free-icons/d20" title="d20 icons">D20 icons created by Freepik - Flaticon</a> -->
-                <span>D&D</span>
-              </li>
-              <li>
-                <img class="cv__icon" src="assets/icons/icon-music.png" />
-                <!-- <a href="https://www.flaticon.com/free-icons/electric-guitar" title="electric guitar icons">Electric guitar icons created by Freepik - Flaticon</a> -->
-                <span>Music</span>
-              </li>
-              <li>
-                <img class="cv__icon" src="assets/icons/icon-cooking.png" />
-                <!-- <a href="https://www.flaticon.com/free-icons/cooking" title="cooking icons">Cooking icons created by Freepik - Flaticon</a> -->
-                <span>Cooking</span>
-              </li>
-            </ul>
-          </section>
-        </aside>
-
-        <main>
-          <section class="header__content">
-            <h1>Azad Kavian</h1>
-            <h2>Software Engineer | Angular Specialist | Product Builder</h2>
-            <p>
-              In addition to being primarily a front-end developer, I am a versatile and experienced
-              software developer with a proven track record of delivering over 30 high-quality
-              projects on time and within budget. Skilled in leading and training teams, designing
-              and developing web applications, and implementing innovative solutions using AI.
-            </p>
-            <ul class="header__content--contact">
-              <li>
-                <img class="cv__icon" src="assets/icons/icon-mail.png" />
-                <!-- <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a> -->
-                <b>azadkavian@gmail.com</b>
-              </li>
-              <li>
-                <img class="cv__icon" src="assets/icons/icon-phone.png" />
-                <!-- <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Gregor Cresnar - Flaticon</a> -->
-                <b>+98 998 144 9285</b>
-              </li>
-              <li>
-                <img class="cv__icon" src="assets/icons/icon-linkedin.svg" />
-                <b>linkedin.com/in/azadkavian</b>
-              </li>
-            </ul>
-          </section>
-
-          <ol class="xp">
-            <h3>Work Experiences</h3>
-            <li>
-              <img src="assets/images/logo-vikarno.png" class="xp__logo" />
-              <div class="xp__header">
-                <h4 class="xp__header--title">
-                  Vikarno
-                  <em class="xp__header--date"> (2022 - Present) </em>
-                </h4>
-                <h5 class="xp__header--position" style="color: rgb(4, 167, 187)">
-                  Senior Software Engineer
-                </h5>
-              </div>
-              <p class="xp__body">
-                Vikarno is a software agency addressing IT industry challenges. As a co-founder and
-                programming expert, I led a team of 3 developers, managing 15 projects from start to
-                finish with perfect delivery.
-              </p>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Angular</li>
-                <li class="cv__tag">NgXS</li>
-                <li class="cv__tag">Nx</li>
-                <li class="cv__tag">PrimeNG</li>
-                <li class="cv__tag">Node</li>
-                <li class="cv__tag">Python</li>
-                <li class="cv__tag">UI Design</li>
-                <li class="cv__tag">Management</li>
-              </ul>
-            </li>
-            <li>
-              <img src="assets/images/logo-navaak.png" class="xp__logo" />
-              <div class="xp__header">
-                <h4 class="xp__header--title">
-                  Navaak
-                  <em class="xp__header--date"> (2017 - 2023) </em>
-                </h4>
-                <h5 class="xp__header--position" style="color: rgb(32, 181, 156)">
-                  Front-end Developer
-                </h5>
-              </div>
-              <p class="xp__body">
-                At Navaak, a streaming platform for Iranian media, I designed a new data management
-                panel, launched a reporting panel, and implemented an intelligent content
-                recommender system.
-              </p>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Angular</li>
-                <li class="cv__tag">NgXS</li>
-                <li class="cv__tag">UI Design</li>
-                <li class="cv__tag">Python</li>
-                <li class="cv__tag">Flask</li>
-                <li class="cv__tag">AI</li>
-                <li class="cv__tag">SQL</li>
-                <li class="cv__tag">GraphQL</li>
-              </ul>
-            </li>
-            <li>
-              <img src="assets/images/logo-didex.png" class="xp__logo" />
-              <div class="xp__header">
-                <h4 class="xp__header--title">
-                  DidEx
-                  <em class="xp__header--date"> (2020 - 2022) </em>
-                </h4>
-                <h5 class="xp__header--position" style="color: rgb(247, 168, 43)">
-                  Front-end Developer
-                </h5>
-              </div>
-              <p class="xp__body">
-                At DidEx, a centralized cryptocurrency exchange, I built the trading platform from
-                scratch, led a team of 4 front-end developers, and customized the TradingView
-                charting library to meet the company's needs.
-              </p>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Angular</li>
-                <li class="cv__tag">Angular Material</li>
-                <li class="cv__tag">NgXS</li>
-                <li class="cv__tag">RxJS</li>
-                <li class="cv__tag">WebSocket</li>
-                <li class="cv__tag">TradingView</li>
-              </ul>
-            </li>
-            <li>
-              <img src="assets/images/logo-takhfifan.png" class="xp__logo" />
-              <div class="xp__header">
-                <h4 class="xp__header--title">
-                  Takhfifan
-                  <em class="xp__header--date"> (2017 - 2017) </em>
-                </h4>
-                <h5 class="xp__header--position" style="color: rgb(236, 105, 121)">
-                  Junior Front-end Developer
-                </h5>
-              </div>
-              <p class="xp__body">
-                At Takhfifan, Iran's first group-buying company, I improved UX with new features and
-                created up to 10 email templates and landing pages for marketing campaigns.
-              </p>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">JavaScript</li>
-                <li class="cv__tag">CSS</li>
-                <li class="cv__tag">Backbone.js</li>
-                <li class="cv__tag">Bootstrap</li>
-                <li class="cv__tag">jQuery</li>
-              </ul>
-            </li>
-          </ol>
-
-          <ol class="projects">
-            <h3>Freelance Projects</h3>
-            <li>
-              <div class="project__header">
-                <h4>
-                  Innovative and Intelligent Language Learning Platform (LingoLab)
-                  <em>(2024)</em>
-                </h4>
-              </div>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Angular</li>
-                <li class="cv__tag">PrimeNG</li>
-                <li class="cv__tag">NestJS</li>
-                <li class="cv__tag">TypeORM</li>
-                <li class="cv__tag">WebSocket</li>
-                <li class="cv__tag">Nx</li>
-                <li class="cv__tag">AI</li>
-                <li class="cv__tag">Prompt Engineering</li>
-              </ul>
-            </li>
-            <li>
-              <div class="project__header">
-                <h4>
-                  Therapy and Mental Health Website (Araamma)
-                  <em>(2024)</em>
-                </h4>
-              </div>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Angular</li>
-                <li class="cv__tag">PrimeNG</li>
-                <li class="cv__tag">NestJS</li>
-                <li class="cv__tag">TypeORM</li>
-                <li class="cv__tag">WebSocket</li>
-                <li class="cv__tag">Nx</li>
-                <li class="cv__tag">AI</li>
-                <li class="cv__tag">Prompt Engineering</li>
-              </ul>
-            </li>
-            <li>
-              <div class="project__header">
-                <h4>
-                  Therapist ChatBot (VClinic)
-                  <em>(2023)</em>
-                </h4>
-              </div>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Python</li>
-                <li class="cv__tag">Flask</li>
-                <li class="cv__tag">SQLAlchemy</li>
-                <li class="cv__tag">WebSocket</li>
-                <li class="cv__tag">AI</li>
-                <li class="cv__tag">Bulma</li>
-                <li class="cv__tag">Docker</li>
-                <li class="cv__tag">Prompt Engineering</li>
-              </ul>
-            </li>
-            <li>
-              <div class="project__header">
-                <h4>
-                  Intelligent Content Recommender System (Navaak)
-                  <em>(2020 - 2023)</em>
-                </h4>
-              </div>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Python</li>
-                <li class="cv__tag">Flask</li>
-                <li class="cv__tag">SQL</li>
-                <li class="cv__tag">AI</li>
-                <li class="cv__tag">Machine Learning</li>
-                <li class="cv__tag">Data Engineering</li>
-              </ul>
-            </li>
-            <li>
-              <div class="project__header">
-                <h4>
-                  Startup Application Portal (Stars Wealth Management)
-                  <em>(2019)</em>
-                </h4>
-              </div>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Angular</li>
-                <li class="cv__tag">RxJS</li>
-                <li class="cv__tag">Node</li>
-                <li class="cv__tag">Express</li>
-                <li class="cv__tag">Mongoose</li>
-                <li class="cv__tag">Bulma</li>
-              </ul>
-            </li>
-            <li>
-              <div class="project__header">
-                <h4>
-                  Feature-based Heuristic for Sentiment Classification
-                  <em>(2017)</em>
-                </h4>
-              </div>
-              <em class="cv__skills">Skills</em>
-              <ul class="cv__tag--list">
-                <li class="cv__tag">Python</li>
-                <li class="cv__tag">Numpy</li>
-                <li class="cv__tag">Scipy</li>
-                <li class="cv__tag">MatPlotLib</li>
-                <li class="cv__tag">Pandas</li>
-              </ul>
-            </li>
-          </ol>
-        </main>
+<!DOCTYPE html><html lang=en class=scroll-smooth><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1"><title>Azad Kavian | Senior Front-end Engineer</title><meta name=description content="Senior Front-end Engineer portfolio showcasing Angular front-end expertise, Node.js/NestJS back-end projects, and availability for relocation across Europe."><meta name=keywords content="Senior Front-end Engineer, Front-end Developer, Angular, React, Next.js, Node.js, NestJS, JavaScript, TypeScript"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel=stylesheet><link rel=stylesheet href=/kv-portfolio-temp.b47f6f13.css><link rel=icon type=image/x-icon href=/favicon.18708c25.ico><body class="bg-white dark:bg-zinc-950 dark:text-zinc-100 min-h-screen text-zinc-900 transition-colors">
+    
+    <header class="backdrop-blur bg-white/90 border-b border-zinc-200 dark:bg-zinc-950/90 dark:border-zinc-800 sticky top-0 z-50">
+      <div class="flex items-center justify-between max-w-6xl mx-auto px-4 py-4 sm:px-6">
+        <a href=#hero class="dark:text-white font-semibold sm:text-lg text-zinc-900 tracking-tight">
+          Azad Kavian | Senior Front-end Engineer
+        </a>
+        <button id=theme-toggle type=button class="dark:text-zinc-100 font-medium gap-2 hover:text-accent inline-flex items-center p-2 rounded-full text-sm text-zinc-700 transition">
+          <span data-icon>☀️</span>
+        </button>
       </div>
-    </div>
-  </body>
-</html>
+    </header>
+
+    <main id=hero class="lg:py-24 max-w-6xl mx-auto px-4 py-12 sm:px-6 sm:py-16">
+      
+      <section class="gap-4 grid lg:grid-cols-9 lg:items-center">
+        <div class="col-span-5 space-y-6">
+          <p class="text-accent text-sm tracking-[0.3em] uppercase">
+            Open to Relocation
+          </p>
+          <h1 id=intro-title class="!leading-snug font-extrabold lg:text-5xl sm:text-3xl text-2xl tracking-tight">
+            Front-End Engineer,
+            <br>
+            TypeScript Expert,
+            <br>
+            Angular | React.js | Next.js
+          </h1>
+          <h2 class="lg:text-3xl text-2xl text-accent">
+            Node.js | NestJS | Express.js
+          </h2>
+          <p class="dark:text-zinc-300 text-lg text-zinc-600">
+            Helping Companies Transform Ideas into Innovative Apps 💡
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href=#projects class=btn-primary data-scroll-to=projects>View Projects</a>
+            <a href=/assets/cv.pdf class=btn-secondary download>Download CV</a>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br border border-zinc-200 col-span-4 dark:border-zinc-800 dark:from-accent/20 dark:to-zinc-900 dark:via-zinc-950 from-accent/20 px-4 py-6 rounded-3xl shadow-lg to-accent/5 via-white">
+          <dl class="gap-4 grid sm:grid-cols-3">
+            <div class=space-y-2>
+              <dt class="dark:text-zinc-400 font-medium text-sm text-zinc-500">
+                Experience
+              </dt>
+              <dd class="dark:text-white font-semibold text-xl text-zinc-900">
+                9+ years
+              </dd>
+              <dd class="dark:text-zinc-400 text-sm text-zinc-500">
+                Across SaaS, media, healthcare, tourism, and education
+              </dd>
+            </div>
+            <div class=space-y-2>
+              <dt class="dark:text-zinc-400 font-medium text-sm text-zinc-500">
+                Leadership
+              </dt>
+              <dd class="dark:text-white font-semibold text-xl text-zinc-900">
+                Teams of 3-6
+              </dd>
+              <dd class="dark:text-zinc-400 text-sm text-zinc-500">
+                Mentorship and coaching
+              </dd>
+            </div>
+            <div class=space-y-2>
+              <dt class="dark:text-zinc-400 font-medium text-sm text-zinc-500">
+                Notice Period
+              </dt>
+              <dd class="dark:text-white font-semibold text-xl text-zinc-900">
+                1 Month
+              </dd>
+              <dd class="dark:text-zinc-400 text-sm text-zinc-500">
+                Ready for on-site, hybrid, or remote roles in Europe
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      
+      <section id=about class="mt-24 scroll-mt-24" tabindex=-1 aria-labelledby=about-title>
+        <div class="max-w-3xl mx-auto space-y-4">
+          <h2 id=about-title class="font-semibold text-3xl tracking-tight">
+            About Me
+          </h2>
+          <p class="dark:text-zinc-300 text-lg text-zinc-600">
+            Creating new things from scratch or fixing and improving those that
+            already exist are activities that fulfill me and give me a sense of
+            strength and incredible capability. In this journey, if I find a
+            creative or unique way to do my activities, that would make me even
+            happier! ☺️
+          </p>
+          <p class="dark:text-zinc-300 text-lg text-zinc-600">
+            Originally specializing in Angular for front-end development, I've
+            grown into a seasoned full-stack developer with expertise in
+            TypeScript. 👨‍💻.
+            <br>
+            One of my proudest achievements was launching LingoLab, an
+            AI-powered language learning platform that came to life within just
+            6 months. Contributing to the development of both back-end and
+            front-end parts of it, alongside collaborating in the UI design
+            process, summed up my expertise, passion, and talents all in one
+            project.
+          </p>
+          <p class="dark:text-zinc-300 text-lg text-zinc-600">
+            Feel free to reach out via email if you'd like to discuss
+            collaboration opportunities or share insights about tech trends at
+            <b class="italic text-accent text-semibold">azadkavian@gmail.com</b>.
+          </p>
+        </div>
+      </section>
+
+      
+      <section class="mt-24 scroll-mt-24">
+        <div class=space-y-8>
+          <h2 class="font-semibold text-3xl tracking-tight">
+            Career Highlights
+          </h2>
+          <ol class="border-l border-zinc-200 dark:border-zinc-800 pl-8 relative space-y-8">
+            <li class=ml-4>
+              <div class="-translate-x-14 absolute bg-accent rounded-full size-4"></div>
+              <h3 class="font-semibold text-lg">
+                🤝 Mentored and led teams of 3-6 engineers to deliver
+                high-impact results.
+              </h3>
+              <p class="dark:text-zinc-300 mt-2 text-sm text-zinc-600">
+                Leading to a reduction in technical debt, and a 30% reduction in
+                critical bugs post-release.
+              </p>
+            </li>
+            <li class=ml-4>
+              <div class="-translate-x-14 absolute bg-accent rounded-full size-4"></div>
+              <h3 class="font-semibold text-lg">
+                🤖 Automated a reservation process by scraping a web page.
+              </h3>
+              <p class="dark:text-zinc-300 mt-2 text-sm text-zinc-600">
+                Resulting in a boost in efficiency by up to 1000% by replacing
+                the manual method.
+              </p>
+            </li>
+            <li class=ml-4>
+              <div class="-translate-x-14 absolute bg-accent rounded-full size-4"></div>
+              <h3 class="font-semibold text-lg">
+                🗄️ Developed an AI-powered content recommendation system.
+              </h3>
+              <p class="dark:text-zinc-300 mt-2 text-sm text-zinc-600">
+                Enhancing user engagement through personalized content delivery.
+              </p>
+            </li>
+            <li class=ml-4>
+              <div class="-translate-x-14 absolute bg-accent rounded-full size-4"></div>
+              <h3 class="font-semibold text-lg">
+                🚀 Played a crucial role in initiating and launching Qtical.
+              </h3>
+              <p class="dark:text-zinc-300 mt-2 text-sm text-zinc-600">
+                Enabling the automation of the reporting process, boosting
+                performance by up to 90%.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      
+      <section id=skills class="mt-24 scroll-mt-24" tabindex=-1 aria-labelledby=skills-title>
+        <div class=space-y-10>
+          <div class="flex items-center justify-between">
+            <h2 id=skills-title class="font-semibold text-3xl tracking-tight">
+              Skills &amp; Tech Stack
+            </h2>
+            <span class="dark:text-zinc-400 text-sm text-zinc-500">Software engineering expertise</span>
+          </div>
+          <div class="gap-6 grid md:grid-cols-3">
+            <article class=card>
+              <h3 id=frontend-title class="font-semibold text-xl">
+                Front-End
+              </h3>
+              <ul class="dark:text-zinc-300 gap-1 grid grid-cols-2 mt-4 text-sm text-zinc-600">
+                <li>Angular</li>
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>RxJS</li>
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>Tailwind CSS</li>
+                <li>NGXS</li>
+              </ul>
+            </article>
+            <article class=card>
+              <h3 id=backend-title class="font-semibold text-xl">Back-End</h3>
+              <ul class="dark:text-zinc-300 gap-1 grid grid-cols-2 mt-4 text-sm text-zinc-600">
+                <li>Node.js</li>
+                <li>NestJS</li>
+                <li>Express.js</li>
+                <li>RESTful APIs</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>TypeORM</li>
+                <li>Mongoose</li>
+                <li>Python</li>
+                <li>Flask</li>
+              </ul>
+            </article>
+            <article class=card aria-labelledby=devops-title>
+              <h3 id=devops-title class="font-semibold text-xl">
+                Tools &amp; DevOps
+              </h3>
+              <ul class="dark:text-zinc-300 gap-1 grid mt-4 text-sm text-zinc-600">
+                <li>Docker</li>
+                <li>Git</li>
+                <li>GitLab CI/CD</li>
+                <li>Nx</li>
+                <li>Jest</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id=projects class="mt-24 scroll-mt-24" tabindex=-1 aria-labelledby=projects-title>
+        <div class=space-y-10>
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 id=projects-title class="font-semibold text-3xl tracking-tight">
+                Project Showcase
+              </h2>
+              <p class="dark:text-zinc-300 mt-2 text-base text-zinc-600">
+                Selected projects demonstrating skill and expertise in
+                developing robust, scalable applications.
+              </p>
+            </div>
+          </div>
+
+          <div class="gap-8 grid md:grid-cols-2 xl:grid-cols-3">
+            <article class="card flex flex-col gap-4">
+              <img src=/araamma.50e70e86.png class="block border border-zinc-200 dark:border-zinc-800 h-36 mb-2 object-cover rounded-xl shadow-md w-full">
+              <div class=space-y-3>
+                <h3 class="font-semibold text-xl">Araamma</h3>
+                <h4 class=text-lg>AI-powered Therapy Platform</h4>
+                <p class="dark:text-zinc-300 text-sm text-zinc-600">
+                  A platform for connecting patients with therapists using AI to
+                  enhance mental health support and accessibility.
+                </p>
+                <ul class="dark:text-zinc-300 list-disc pl-5 space-y-2 text-sm text-zinc-600">
+                  <li>
+                    Architected domain-driven design with Nx libraries for
+                    modularity and scalability.
+                  </li>
+                  <li>
+                    Integrated WebSocket-driven chat functionality with
+                    RxJS-based state management using NGXS.
+                  </li>
+                  <li>
+                    Implemented AI-powered chatbot with memory and context using
+                    NestJS, Socket.io, and RESTful APIs.
+                  </li>
+                </ul>
+                <div class="flex flex-wrap gap-2">
+                  <span class=badge>Angular</span>
+                  <span class=badge>RxJS</span>
+                  <span class=badge>NGXS</span>
+                  <span class=badge>PrimeNG</span>
+                  <span class=badge>Nx</span>
+                  <span class=badge>NestJS</span>
+                  <span class=badge>Socket.io</span>
+                </div>
+              </div>
+              <a href=https://araamma.com target=_blank rel="noopener noreferrer" class="btn-primary mt-auto">Live Website</a>
+            </article>
+
+            <article class="card flex flex-col gap-4">
+              <img src=/bookingpersia.9d185b06.png class="block border border-zinc-200 dark:border-zinc-800 h-36 mb-2 object-cover rounded-xl shadow-md w-full">
+              <div class=space-y-3>
+                <h3 class="font-semibold text-xl">BookingPersia</h3>
+                <h4 class=text-lg>Online Booking Platform</h4>
+                <p class="dark:text-zinc-300 text-sm text-zinc-600">
+                  An online multi-lingual booking platform offering flights,
+                  hotels, trains, and tours across Middle East.
+                </p>
+                <ul class="dark:text-zinc-300 list-disc pl-5 space-y-2 text-sm text-zinc-600">
+                  <li>
+                    Architected seamless NGXS state management for complex data
+                    and booking flows.
+                  </li>
+                  <li>
+                    Customized PrimeNG components for bidirectional and
+                    multi-lingual support.
+                  </li>
+                  <li>
+                    Utilized modular and scalable Nx monorepo structure for
+                    efficient development and deployment.
+                  </li>
+                </ul>
+                <div class="flex flex-wrap gap-2">
+                  <span class=badge>Angular</span>
+                  <span class=badge>RxJS</span>
+                  <span class=badge>NGXS</span>
+                  <span class=badge>PrimeNG</span>
+                  <span class=badge>Nx</span>
+                  <span class=badge>RESTful APIs</span>
+                  <span class=badge>Docker</span>
+                </div>
+              </div>
+              <a href=https://bookingpersia.ir target=_blank rel="noopener noreferrer" class="btn-primary mt-auto">Live Demo</a>
+            </article>
+
+            <article class="card flex flex-col gap-4">
+              <img src=/qtical-panel.3435d65d.png class="block border border-zinc-200 dark:border-zinc-800 h-36 mb-2 object-cover rounded-xl shadow-md w-full">
+              <div class=space-y-3>
+                <h3 class="font-semibold text-xl">Qtical</h3>
+                <h4 class=text-lg>Analytics Dashboard</h4>
+                <p class="dark:text-zinc-300 text-sm text-zinc-600">
+                  A multi-purpose analytics dashboard for visualizing insights
+                  across various YouTube and other streaming platforms.
+                </p>
+                <ul class="dark:text-zinc-300 list-disc pl-5 space-y-2 text-sm text-zinc-600">
+                  <li>
+                    Handled advanced permission and role management for content
+                    creators, publishers, and administrators.
+                  </li>
+                  <li>
+                    Utilized Highcharts for dynamic data visualization with
+                    customized templates.
+                  </li>
+                  <li>
+                    Tailored Custom input components using ControlValueAccessor
+                    to create a seamless user experience.
+                  </li>
+                </ul>
+                <div class="flex flex-wrap gap-2">
+                  <span class=badge>Angular</span>
+                  <span class=badge>RxJS</span>
+                  <span class=badge>NGXS</span>
+                  <span class=badge>Angular Material</span>
+                  <span class=badge>Highcharts</span>
+                  <span class=badge>GraphQL</span>
+                </div>
+              </div>
+              <a href=https://qtical.com target=_blank rel="noopener noreferrer" class="btn-primary mt-auto">Live Website</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id=cv class="mt-24 space-y-4">
+        <h2 class="font-semibold text-3xl tracking-tight">CV &amp; Case Studies</h2>
+        <p class="dark:text-zinc-300 text-lg text-zinc-600">
+          Download my latest CV for a deeper dive into my software development
+          experience, architectural highlights, and references.
+        </p>
+        <a href=/assets/cv.pdf class=btn-primary download>📄 Download My CV</a>
+      </section>
+    </main>
+
+    
+    <footer class="bg-white border-t border-zinc-200 dark:bg-zinc-950 dark:border-zinc-800 mt-24 py-12">
+      <div class="dark:text-zinc-300 flex flex-col gap-6 max-w-6xl mx-auto px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 text-sm text-zinc-600">
+        <nav aria-label="Social links" class="flex flex-wrap font-medium gap-4 text-base">
+          <a href=mailto:azadkavian@gmail.com class=hover:text-accent>Email</a>
+          <a href=https://www.linkedin.com/in/azadkavian/ class=hover:text-accent target=_blank rel=noreferrer>LinkedIn</a>
+          <a href=https://github.com/azadkavian class=hover:text-accent target=_blank rel=noreferrer>GitHub</a>
+        </nav>
+        <p class="sm:text-right text-center text-xs">
+          Open to relocation and hybrid/onsite roles across Europe 🇪🇺
+        </p>
+      </div>
+    </footer>
+
+    <script type=module src=/kv-portfolio-temp.913f7383.js></script>
+  
+
