@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Azad Kavian portfolio preview</title>
+  <desc id="desc">Senior software engineer portfolio with Angular, React, Next.js, NestJS, Python, PostgreSQL, Docker, and Kubernetes.</desc>
+  <rect width="1200" height="630" rx="48" fill="#0f172a"/>
+  <rect x="56" y="56" width="1088" height="518" rx="40" fill="#111827" stroke="#2dd4bf" stroke-opacity="0.18"/>
+  <circle cx="214" cy="166" r="72" fill="#f97316" fill-opacity="0.18"/>
+  <circle cx="956" cy="160" r="108" fill="#14b8a6" fill-opacity="0.16"/>
+  <circle cx="956" cy="456" r="146" fill="#f97316" fill-opacity="0.1"/>
+  <text x="112" y="244" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="700">Azad Kavian</text>
+  <text x="112" y="312" fill="#fb923c" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Senior Software Engineer</text>
+  <text x="112" y="372" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="26">Angular • React • Next.js • NestJS • Python</text>
+  <text x="112" y="414" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="26">PostgreSQL • Docker • Kubernetes • GraphQL</text>
+  <text x="112" y="492" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="22">azadkavian.github.io</text>
+</svg>
